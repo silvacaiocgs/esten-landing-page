@@ -1,9 +1,20 @@
 import { EstenButton } from "./EstenButton";
+// CORREÇÃO: Importando as imagens a partir da pasta de assets
+import logoEstenHorizontal from "../assets/logo-horizontal-esten.png";
+import heroImage from "../assets/esten-hero-image.jpg";
 
 export function HeroSection() {
   const whatsappNumber = "5544997432870";
   const whatsappMessage = encodeURIComponent("Olá! Gostaria de um atendimento personalizado.");
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
+
+  // Função para rolar suavemente para a seção de coleções
+  const scrollToCollections = () => {
+    const collectionsSection = document.getElementById('colecoes');
+    if (collectionsSection) {
+      collectionsSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -11,8 +22,7 @@ export function HeroSection() {
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          // Correção: Usando o caminho direto para a imagem na pasta 'public'
-          backgroundImage: `url(/esten-hero-image.jpg)`,
+          backgroundImage: `url(${heroImage})`,
         }}
       >
         <div className="absolute inset-0 bg-esten-cream/80"></div>
@@ -31,7 +41,7 @@ export function HeroSection() {
           {/* Logo/Brand Image */}
           <div className="mb-8">
             <img 
-              src="/logo-horizontal-esten.png" 
+              src={logoEstenHorizontal} 
               alt="Logo Esten" 
               className="mx-auto h-auto w-full max-w-[280px] md:max-w-[380px]" 
             />
@@ -55,7 +65,7 @@ export function HeroSection() {
             <EstenButton 
               variant="whatsapp" 
               size="lg"
-              onClick={() => document.getElementById('collections')?.scrollIntoView({ behavior: 'smooth' })}
+              onClick={scrollToCollections}
               className="shadow-glow"
             >
               Conheça as Nossas Coleções
