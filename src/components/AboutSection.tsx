@@ -1,3 +1,6 @@
+// Adicionando a importação da logo
+import logoEsten from "@/assets/logo-esten.png";
+
 export function AboutSection() {
   return (
     <section className="py-20 bg-gradient-soft">
@@ -5,6 +8,7 @@ export function AboutSection() {
         <div className="max-w-4xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             {/* Content */}
+            {/* ... o restante do conteúdo que não mudou ... */}
             <div className="space-y-6">
               <div className="space-y-2">
                 <h2 className="text-4xl md:text-5xl font-bold text-primary">
@@ -51,8 +55,8 @@ export function AboutSection() {
               <div className="relative p-8 gradient-elegant rounded-3xl shadow-elegant">
                 <div className="text-center space-y-4">
                   <div className="w-24 h-24 mx-auto bg-primary-foreground rounded-full flex items-center justify-center shadow-soft">
-                    {/* Correção: Usando caminho direto da pasta public */}
-                    <img src="/logo-esten.png" alt="Logo Esten" className="h-16 w-16 object-contain" />
+                    {/* CORREÇÃO: Usando a imagem importada */}
+                    <img src={logoEsten} alt="Logo Esten" className="h-16 w-16 object-contain" />
                   </div>
                   <h3 className="text-2xl font-bold text-primary-foreground">
                     Sua Luz Interior
@@ -74,4 +78,3 @@ export function AboutSection() {
     </section>
   );
 }
-

@@ -1,6 +1,6 @@
 import { EstenButton } from "./EstenButton";
-// CORREÇÃO: Importando as imagens a partir da pasta de assets
-import logoEstenHorizontal from "../assets/logo-horizontal-esten.png";
+// CORREÇÃO: O nome do arquivo foi ajustado para ser consistente (tudo minúsculo).
+import logoEstenHorizontal from "../assets/logohorizontalesten.png"; 
 import heroImage from "../assets/esten-hero-image.jpg";
 
 export function HeroSection() {
@@ -68,7 +68,7 @@ export function HeroSection() {
               onClick={scrollToCollections}
               className="shadow-glow"
             >
-              Conheça as Nossas Coleções
+              Conheça as Nossa Coleção
             </EstenButton>
             
             {/* Botão Secundário */}
@@ -101,4 +101,3 @@ export function HeroSection() {
     </section>
   );
 }
-
