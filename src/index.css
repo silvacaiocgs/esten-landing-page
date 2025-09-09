@@ -34,27 +34,27 @@
     --primary: var(--esten-olive);
     --primary-foreground: var(--esten-cream);
 
-    --secondary: var(--esten-terracotta-soft);
-    --secondary-foreground: var(--esten-olive);
+    --secondary: hsl(var(--esten-terracotta));
+    --secondary-foreground: hsl(var(--esten-cream));
 
     --muted: var(--esten-cream-warm);
-    --muted-foreground: var(--esten-bordeaux);
+    --muted-foreground: hsl(var(--esten-bordeaux) / 0.8);
 
-    --accent: var(--esten-terracotta);
-    --accent-foreground: var(--esten-cream);
+    --accent: hsl(var(--esten-terracotta-soft));
+    --accent-foreground: hsl(var(--esten-olive));
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: var(--esten-cream);
 
-    --border: var(--esten-terracotta-soft);
-    --input: var(--esten-cream-warm);
+    --border: hsl(var(--esten-terracotta) / 0.3);
+    --input: hsl(var(--esten-terracotta) / 0.2);
     --ring: var(--esten-bordeaux);
 
     --radius: 0.75rem;
     
     /* Esten Gradients */
     --gradient-hero: linear-gradient(135deg, hsl(var(--esten-olive)) 0%, hsl(var(--esten-terracotta)) 100%);
-    --gradient-soft: linear-gradient(180deg, hsl(var(--esten-cream)) 0%, hsl(var(--esten-cream-warm)) 100%);
+    --gradient-soft: linear-gradient(180deg, hsl(var(--background)) 0%, hsl(var(--esten-cream-warm)) 100%);
     --gradient-elegant: linear-gradient(45deg, hsl(var(--esten-terracotta-soft)) 0%, hsl(var(--esten-yellow)) 100%);
     
     /* Esten Shadows */
@@ -73,14 +73,23 @@
     @apply border-border;
   }
 
+  html {
+    @apply smooth-scroll;
+  }
+
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground antialiased;
     font-family: 'Inter', system-ui, -apple-system, sans-serif;
   }
   
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Inter', system-ui, -apple-system, sans-serif;
-    font-weight: 600;
+  }
+}
+
+@layer utilities {
+  .smooth-scroll {
+    scroll-behavior: smooth;
   }
 }
 
@@ -116,20 +125,5 @@
   
   .transition-smooth {
     transition: var(--transition-smooth);
-  }
-  
-  /* Esten Star Pattern */
-  .star-pattern {
-    position: relative;
-  }
-  
-  .star-pattern::before {
-    content: "✦";
-    position: absolute;
-    color: hsl(var(--esten-yellow) / 0.3);
-    font-size: 2rem;
-    top: -1rem;
-    right: -1rem;
-    z-index: -1;
   }
 }

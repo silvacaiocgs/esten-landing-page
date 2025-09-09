@@ -1,4 +1,4 @@
-import { EstenButton } from "./EstenButton";
+import { EstenButton } from "@/components/EstenButton";
 import { MessageCircle, Heart, Shield, Truck } from "lucide-react";
 
 export function FinalCtaSection() {
@@ -10,28 +10,28 @@ export function FinalCtaSection() {
     {
       icon: <MessageCircle className="h-6 w-6" />,
       title: "Atendimento Personalizado",
-      description: "Nossa equipe te atende com carinho via WhatsApp"
+      description: "Nossa equipe te atende com carinho via WhatsApp."
     },
     {
       icon: <Heart className="h-6 w-6" />,
       title: "Feito com Propósito",
-      description: "Cada peça é criada pensando na mulher cristã"
+      description: "Peças que refletem seus valores e sua essência."
     },
     {
       icon: <Shield className="h-6 w-6" />,
       title: "Qualidade Garantida",
-      description: "Tecidos selecionados e acabamento premium"
+      description: "Tecidos selecionados e acabamento premium."
     },
     {
       icon: <Truck className="h-6 w-6" />,
       title: "Entrega Nacional",
-      description: "Levamos Esten para todo o Brasil"
+      description: "Levamos Esten para todo o Brasil."
     }
   ];
 
   return (
     <section className="py-20 gradient-hero text-primary-foreground relative overflow-hidden">
-      {/* Background decorative stars */}
+      {/* Elementos decorativos */}
       <div className="absolute top-10 left-10 text-6xl opacity-10">✦</div>
       <div className="absolute top-20 right-20 text-4xl opacity-10">✧</div>
       <div className="absolute bottom-10 left-1/4 text-5xl opacity-10">✦</div>
@@ -39,7 +39,7 @@ export function FinalCtaSection() {
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
-          {/* Main CTA */}
+          {/* CTA Principal */}
           <div className="mb-16">
             <h2 className="text-4xl md:text-6xl font-bold mb-6">
               Pronta para Brilhar com Esten?
@@ -56,11 +56,11 @@ export function FinalCtaSection() {
               className="text-xl px-12 py-6 shadow-glow hover:scale-110"
             >
               <MessageCircle className="mr-3 h-6 w-6" />
-              Fale Conosco no WhatsApp Agora!
+              Fale Conosco no WhatsApp
             </EstenButton>
           </div>
 
-          {/* Benefits Grid */}
+          {/* Grid de Benefícios */}
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {benefits.map((benefit, index) => (
               <div key={index} className="text-center space-y-3">
@@ -79,11 +79,10 @@ export function FinalCtaSection() {
             ))}
           </div>
 
-          {/* Final Message */}
+          {/* Mensagem Final */}
           <div className="mt-16 p-8 bg-primary-foreground/10 rounded-2xl">
             <p className="text-lg italic opacity-90">
-              "Através da moda, buscamos construir uma comunidade onde cada mulher 
-              possa brilhar e influenciar positivamente seu entorno."
+              "Acreditamos em uma moda que celebra a sua essência e empodera suas escolhas."
             </p>
             <p className="text-sm mt-3 font-medium">
               — Equipe Esten
@@ -94,3 +93,4 @@ export function FinalCtaSection() {
     </section>
   );
 }
+

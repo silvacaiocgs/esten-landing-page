@@ -16,34 +16,30 @@ export function FaqSection() {
       answer: "Aceitamos PIX e Cartão de Crédito. Para mais detalhes sobre as condições e opções de parcelamento, por favor, consulte nossa equipe de atendimento via WhatsApp."
     },
     {
+      question: "Qual o diferencial das peças Esten?",
+      answer: "Nossas peças são criadas para a mulher moderna que busca elegância, qualidade e propósito. Utilizamos tecidos selecionados, modelagem pensada para o corpo feminino e um design atemporal que permite expressar seu estilo com sofisticação."
+    },
+    {
       question: "Como funciona a política de trocas e devoluções?",
-      answer: "Você tem até 7 dias para trocar ou devolver qualquer produto que não esteja de acordo com suas expectativas. Basta entrar em contato conosco via WhatsApp que orientamos todo o processo. As peças devem estar sem uso, com etiquetas e em perfeito estado."
+      answer: "Você tem até 7 dias para trocar ou devolver qualquer produto. Basta entrar em contato conosco via WhatsApp que orientamos todo o processo. As peças devem estar sem uso, com etiquetas e em perfeito estado."
     },
     {
       question: "Vocês entregam para todo o Brasil?",
       answer: "Sim, enviamos para todo o Brasil! Para consultar prazos de entrega e valores de frete para a sua região, por favor, entre em contato conosco via WhatsApp."
     },
-    {
-      question: "Qual o diferencial das peças Esten?",
-      answer: "Nossas peças são criadas especialmente para a mulher cristã moderna que busca elegância, qualidade e propósito. Utilizamos tecidos selecionados, modelagem pensada para o corpo feminino e design que permite expressar sua fé com sofisticação, fugindo do comum e do vulgar."
-    },
-    {
-      question: "Como a Esten se conecta com a fé cristã?",
-      answer: "A Esten é inspirada na Rainha Ester, símbolo de coragem, sabedoria e elegância. Nossa marca foi criada para construir uma comunidade de mulheres cristãs que desejam expressar sua identidade e fé através da moda, sempre respeitando valores cristãos de modéstia e elegância."
-    }
   ];
 
   return (
     <section className="py-20 bg-gradient-soft">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
-          {/* Header */}
+          {/* Cabeçalho */}
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
-              Dúvidas Frequentes sobre a Esten
+              Dúvidas Frequentes
             </h2>
             <p className="text-lg text-muted-foreground">
-              Encontre respostas para as principais dúvidas sobre nossa marca e produtos
+              Encontre respostas para as principais dúvidas sobre nossa marca e produtos.
             </p>
           </div>
 
@@ -65,7 +61,7 @@ export function FaqSection() {
             ))}
           </Accordion>
 
-          {/* Contact CTA */}
+          {/* CTA de Contato */}
           <div className="text-center mt-12 p-6 bg-card rounded-lg shadow-soft">
             <p className="text-muted-foreground mb-4">
               Não encontrou a resposta que procurava?

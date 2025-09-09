@@ -13,25 +13,17 @@ export function Footer() {
           <div className="space-y-4">
             <h3 className="text-3xl font-light tracking-wider">esten</h3>
             <p className="text-primary-foreground/80 leading-relaxed">
-              Moda que inspira, fortalece e eleva. Criada especialmente para 
-              a mulher cristã que busca expressar sua fé com elegância.
+              Moda com propósito, que inspira e eleva. Criada para 
+              a mulher que busca expressar sua essência com elegância.
             </p>
             <div className="flex space-x-4">
               <a 
-                href="https://instagram.com/esten" 
+                href="https://instagram.com/use.esten" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-primary-foreground/10 rounded-full flex items-center justify-center hover:bg-primary-foreground/20 transition-colors"
               >
                 <Instagram className="h-5 w-5" />
-              </a>
-              <a 
-                href="https://facebook.com/esten" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="w-10 h-10 bg-primary-foreground/10 rounded-full flex items-center justify-center hover:bg-primary-foreground/20 transition-colors"
-              >
-                <Facebook className="h-5 w-5" />
               </a>
               <a 
                 href={whatsappUrl}
@@ -54,12 +46,7 @@ export function Footer() {
               <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="block text-primary-foreground/80 hover:text-primary-foreground transition-colors">
                 Atendimento WhatsApp
               </a>
-              <a href="#" className="block text-primary-foreground/80 hover:text-primary-foreground transition-colors">
-                Política de Privacidade
-              </a>
-              <a href="#" className="block text-primary-foreground/80 hover:text-primary-foreground transition-colors">
-                Termos de Uso
-              </a>
+              {/* Adicionar links para políticas quando estiverem disponíveis */}
             </div>
           </div>
 
@@ -78,10 +65,6 @@ export function Footer() {
                 <MessageCircle className="h-4 w-4" />
                 WhatsApp: (44) 99743-2870
               </a>
-              <p className="text-sm mt-4">
-                CNPJ: 00.000.000/0001-00<br />
-                Liberty Business LTDA
-              </p>
             </div>
           </div>
         </div>
@@ -90,16 +73,17 @@ export function Footer() {
         <div className="border-t border-primary-foreground/20 pt-8 space-y-4">
           <div className="text-center">
             <p className="text-primary-foreground/60 italic mb-2">
-              "Através da moda, buscamos construir uma comunidade onde cada mulher possa brilhar e influenciar positivamente seu entorno."
+              "Acreditamos em uma moda que celebra a sua essência e empodera suas escolhas."
             </p>
           </div>
           
           <div className="flex flex-col md:flex-row justify-between items-center text-sm text-primary-foreground/60">
             <p>© 2024 Esten - Todos os direitos reservados.</p>
-            <p>Desenvolvido com ♡ para mulheres de fé</p>
+            <p>Desenvolvido por Kadima Group®</p>
           </div>
         </div>
       </div>
     </footer>
   );
 }
+
