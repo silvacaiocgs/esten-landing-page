@@ -24,7 +24,7 @@ export function ProductCard({ product }: ProductCardProps) {
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
 
   return (
-    <div className="bg-card rounded-lg overflow-hidden shadow-soft transition-shadow duration-300 hover:shadow-elegant flex flex-col group">
+    <div className="bg-card rounded-lg overflow-hidden border flex flex-col group">
       <Carousel className="relative" opts={{ loop: true }}>
         <CarouselContent>
           {product.images.map((image, index) => (
@@ -39,12 +39,12 @@ export function ProductCard({ product }: ProductCardProps) {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious className="absolute left-2 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity" />
-        <CarouselNext className="absolute right-2 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity" />
+        <CarouselPrevious className="absolute left-3 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity" />
+        <CarouselNext className="absolute right-3 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity" />
       </Carousel>
 
       <div className="p-4 text-center flex flex-col flex-grow">
-        <h3 className="text-lg font-semibold text-primary">{product.name}</h3>
+        <h3 className="font-playfair text-lg font-semibold text-primary">{product.name}</h3>
         <p className="text-sm text-muted-foreground mb-4">{product.description}</p>
         <Button asChild className="mt-auto w-full">
           <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">

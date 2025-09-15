@@ -4,33 +4,58 @@
 
 @layer base {
   :root {
-    --background: 30 36% 96%; /* Esten Cream */
-    --foreground: 85 15% 33%; /* Esten Olive Darker */
+    --background: 30 36% 94%; /* #F5F1EC */
+    --foreground: 77 15% 25%; /* #454A33 */
 
-    --card: 30 36% 96%;
-    --card-foreground: 85 15% 33%;
-    
-    /* ... outras cores base ... */
+    --card: 30 36% 94%;
+    --card-foreground: 77 15% 25%;
 
-    --primary: 85 25% 45%; /* Esten Olive */
-    --primary-foreground: 45 35% 94%; /* Esten Cream */
+    --popover: 30 36% 94%;
+    --popover-foreground: 77 15% 25%;
 
-    --secondary: 15 55% 55%; /* Esten Terracotta */
-    --secondary-foreground: 45 35% 94%;
+    --primary: 77 15% 37%; /* #6A704C */
+    --primary-foreground: 30 36% 94%; /* #F5F1EC */
 
-    --border: 15 55% 55% / 0.2;
-    --input: 15 55% 55% / 0.2;
-    --ring: 350 65% 35%;
+    --secondary: 19 39% 64%; /* #BC846C */
+    --secondary-foreground: 30 36% 94%;
 
-    --radius: 0.75rem;
+    --muted: 77 15% 47%; /* Lighter olive for muted text */
+    --muted-foreground: 77 15% 30%;
+
+    --accent: 30 36% 90%;
+    --accent-foreground: 77 15% 20%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 60 9.1% 97.8%;
+
+    --border: 77 15% 85%;
+    --input: 77 15% 85%;
+    --ring: 77 15% 37%;
+
+    --radius: 0.5rem;
 
     /* Esten Brand Colors */
-    --esten-cream: 30 36% 96%;
-    --esten-bordeaux: 350 65% 35%;
-    --esten-terracotta: 15 55% 55%;
-    --esten-yellow: 45 85% 65%;
-    --esten-olive: 85 25% 45%;
+    --esten-cream: 30 36% 94%;
+    --esten-bordeaux: 348 51% 36%; /* #8C2D3E */
+    --esten-terracotta: 19 39% 64%; /* #BC846C */
+    --esten-yellow: 45 85% 65%; /* #EDC951 - Kept from original */
+    --esten-olive: 77 15% 37%; /* #6A704C */
   }
-  
-  /* ... */
+
+  .dark {
+    /* Define dark mode colors if needed */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-playfair;
+  }
 }
