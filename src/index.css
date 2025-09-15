@@ -1,129 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Esten Design System - Elegância com Propósito */
-
 @layer base {
   :root {
-    /* Esten Brand Colors - HSL Format */
-    --esten-cream: 45 35% 94%;
+    --background: 30 36% 96%; /* Esten Cream */
+    --foreground: 85 15% 33%; /* Esten Olive Darker */
+
+    --card: 30 36% 96%;
+    --card-foreground: 85 15% 33%;
+    
+    /* ... outras cores base ... */
+
+    --primary: 85 25% 45%; /* Esten Olive */
+    --primary-foreground: 45 35% 94%; /* Esten Cream */
+
+    --secondary: 15 55% 55%; /* Esten Terracotta */
+    --secondary-foreground: 45 35% 94%;
+
+    --border: 15 55% 55% / 0.2;
+    --input: 15 55% 55% / 0.2;
+    --ring: 350 65% 35%;
+
+    --radius: 0.75rem;
+
+    /* Esten Brand Colors */
+    --esten-cream: 30 36% 96%;
     --esten-bordeaux: 350 65% 35%;
     --esten-terracotta: 15 55% 55%;
     --esten-yellow: 45 85% 65%;
     --esten-olive: 85 25% 45%;
-    
-    /* Esten Extended Palette */
-    --esten-bordeaux-light: 350 45% 55%;
-    --esten-bordeaux-dark: 350 75% 25%;
-    --esten-cream-warm: 35 40% 96%;
-    --esten-terracotta-soft: 15 35% 75%;
-    
-    /* Base System Colors */
-    --background: var(--esten-cream);
-    --foreground: var(--esten-olive);
-
-    --card: var(--esten-cream-warm);
-    --card-foreground: var(--esten-olive);
-
-    --popover: var(--esten-cream-warm);
-    --popover-foreground: var(--esten-olive);
-
-    --primary: var(--esten-olive);
-    --primary-foreground: var(--esten-cream);
-
-    --secondary: hsl(var(--esten-terracotta));
-    --secondary-foreground: hsl(var(--esten-cream));
-
-    --muted: var(--esten-cream-warm);
-    --muted-foreground: hsl(var(--esten-bordeaux) / 0.8);
-
-    --accent: hsl(var(--esten-terracotta-soft));
-    --accent-foreground: hsl(var(--esten-olive));
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: var(--esten-cream);
-
-    --border: hsl(var(--esten-terracotta) / 0.3);
-    --input: hsl(var(--esten-terracotta) / 0.2);
-    --ring: var(--esten-bordeaux);
-
-    --radius: 0.75rem;
-    
-    /* Esten Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(var(--esten-olive)) 0%, hsl(var(--esten-terracotta)) 100%);
-    --gradient-soft: linear-gradient(180deg, hsl(var(--background)) 0%, hsl(var(--esten-cream-warm)) 100%);
-    --gradient-elegant: linear-gradient(45deg, hsl(var(--esten-terracotta-soft)) 0%, hsl(var(--esten-yellow)) 100%);
-    
-    /* Esten Shadows */
-    --shadow-elegant: 0 10px 30px -10px hsl(var(--esten-olive) / 0.2);
-    --shadow-soft: 0 4px 20px -4px hsl(var(--esten-terracotta) / 0.15);
-    --shadow-glow: 0 0 40px hsl(var(--esten-yellow) / 0.3);
-    
-    /* Transitions */
-    --transition-elegant: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    --transition-smooth: all 0.3s ease-in-out;
-  }
-}
-
-@layer base {
-  * {
-    @apply border-border;
-  }
-
-  html {
-    @apply smooth-scroll;
-  }
-
-  body {
-    @apply bg-background text-foreground antialiased;
-    font-family: 'Inter', system-ui, -apple-system, sans-serif;
   }
   
-  h1, h2, h3, h4, h5, h6 {
-    font-family: 'Inter', system-ui, -apple-system, sans-serif;
-  }
-}
-
-@layer utilities {
-  .smooth-scroll {
-    scroll-behavior: smooth;
-  }
-}
-
-@layer components {
-  /* Esten Custom Classes */
-  .gradient-hero {
-    background: var(--gradient-hero);
-  }
-  
-  .gradient-soft {
-    background: var(--gradient-soft);
-  }
-  
-  .gradient-elegant {
-    background: var(--gradient-elegant);
-  }
-  
-  .shadow-elegant {
-    box-shadow: var(--shadow-elegant);
-  }
-  
-  .shadow-soft {
-    box-shadow: var(--shadow-soft);
-  }
-  
-  .shadow-glow {
-    box-shadow: var(--shadow-glow);
-  }
-  
-  .transition-elegant {
-    transition: var(--transition-elegant);
-  }
-  
-  .transition-smooth {
-    transition: var(--transition-smooth);
-  }
+  /* ... */
 }

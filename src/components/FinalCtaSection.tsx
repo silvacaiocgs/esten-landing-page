@@ -1,91 +1,52 @@
-import { EstenButton } from "@/components/EstenButton";
+import { Button } from "@/components/ui/button";
 import { MessageCircle, Heart, Shield, Truck } from "lucide-react";
 
 export function FinalCtaSection() {
-  const whatsappNumber = "5544997432870"; // Número de telefone atualizado
-  const whatsappMessage = encodeURIComponent("Olá! Estou pronta para brilhar com Esten! Pode me ajudar a escolher as peças perfeitas? 💫");
-  const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
+  const whatsappUrl = `https://wa.me/5544997432870?text=${encodeURIComponent("Olá! Estou pronta para brilhar com Esten! ✨")}`;
 
   const benefits = [
-    {
-      icon: <MessageCircle className="h-6 w-6" />,
-      title: "Atendimento Personalizado",
-      description: "Nossa equipe te atende com carinho via WhatsApp."
-    },
-    {
-      icon: <Heart className="h-6 w-6" />,
-      title: "Feito com Propósito",
-      description: "Peças que refletem seus valores e sua essência."
-    },
-    {
-      icon: <Shield className="h-6 w-6" />,
-      title: "Qualidade Garantida",
-      description: "Tecidos selecionados e acabamento premium."
-    },
-    {
-      icon: <Truck className="h-6 w-6" />,
-      title: "Entrega Nacional",
-      description: "Levamos Esten para todo o Brasil."
-    }
+    { icon: <MessageCircle />, title: "Atendimento Personalizado", description: "Nossa equipe te atende com carinho via WhatsApp." },
+    { icon: <Heart />, title: "Feito com Propósito", description: "Peças que refletem seus valores e sua essência." },
+    { icon: <Shield />, title: "Qualidade Garantida", description: "Tecidos selecionados e acabamento premium." },
+    { icon: <Truck />, title: "Entrega Nacional", description: "Levamos Esten para todo o Brasil." }
   ];
 
   return (
-    <section className="py-20 gradient-hero text-primary-foreground relative overflow-hidden">
-      {/* Elementos decorativos */}
-      <div className="absolute top-10 left-10 text-6xl opacity-10">✦</div>
-      <div className="absolute top-20 right-20 text-4xl opacity-10">✧</div>
-      <div className="absolute bottom-10 left-1/4 text-5xl opacity-10">✦</div>
-      <div className="absolute bottom-20 right-10 text-3xl opacity-10">✧</div>
-      
-      <div className="container mx-auto px-4 relative z-10">
-        <div className="max-w-4xl mx-auto text-center">
-          {/* CTA Principal */}
-          <div className="mb-16">
-            <h2 className="text-4xl md:text-6xl font-bold mb-6">
-              Pronta para Brilhar com Esten?
-            </h2>
-            <p className="text-xl md:text-2xl mb-8 opacity-90">
-              Sua próxima peça favorita te espera. Nossa equipe está pronta para 
-              te atender com toda atenção e carinho via WhatsApp.
-            </p>
-            
-            <EstenButton 
-              variant="secondary" 
-              size="lg"
-              href={whatsappUrl}
-              className="text-xl px-12 py-6 shadow-glow hover:scale-110"
-            >
-              <MessageCircle className="mr-3 h-6 w-6" />
-              Fale Conosco no WhatsApp
-            </EstenButton>
-          </div>
+    <section className="py-20 bg-background">
+      <div className="container mx-auto px-4">
+        <div className="max-w-4xl mx-auto text-center bg-card p-8 md:p-12 rounded-lg shadow-lg">
+          <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
+            PRONTA PARA BRILHAR COM ESTEN?
+          </h2>
+          <p className="text-lg text-muted-foreground mb-8">
+            Sua próxima peça favorita te espera. Nossa equipe está pronta para te atender com toda atenção e carinho via WhatsApp.
+          </p>
+          <Button asChild size="lg">
+            <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
+              Fale conosco no WhatsApp
+            </a>
+          </Button>
 
-          {/* Grid de Benefícios */}
+          <div className="border-t my-12 border-border" />
+
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {benefits.map((benefit, index) => (
-              <div key={index} className="text-center space-y-3">
-                <div className="w-16 h-16 mx-auto bg-primary-foreground/10 rounded-full flex items-center justify-center">
-                  <div className="text-primary-foreground">
-                    {benefit.icon}
-                  </div>
+            {benefits.map((benefit) => (
+              <div key={benefit.title} className="text-center space-y-2">
+                <div className="w-12 h-12 mx-auto bg-primary text-primary-foreground rounded-full flex items-center justify-center">
+                  {benefit.icon}
                 </div>
-                <h4 className="font-semibold text-lg">
-                  {benefit.title}
-                </h4>
-                <p className="text-sm opacity-80">
-                  {benefit.description}
-                </p>
+                <h4 className="font-semibold text-foreground">{benefit.title}</h4>
+                <p className="text-sm text-muted-foreground">{benefit.description}</p>
               </div>
             ))}
           </div>
 
-          {/* Mensagem Final */}
-          <div className="mt-16 p-8 bg-primary-foreground/10 rounded-2xl">
-            <p className="text-lg italic opacity-90">
+           <div className="mt-12">
+            <p className="text-base italic text-muted-foreground">
               "Acreditamos em uma moda que celebra a sua essência e empodera suas escolhas."
             </p>
-            <p className="text-sm mt-3 font-medium">
-              — Equipe Esten
+            <p className="text-sm mt-2 font-medium text-primary">
+              - Hosana Pinea
             </p>
           </div>
         </div>
@@ -93,4 +54,3 @@ export function FinalCtaSection() {
     </section>
   );
 }
-

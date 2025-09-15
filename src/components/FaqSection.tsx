@@ -8,67 +8,62 @@ import {
 export function FaqSection() {
   const faqs = [
     {
-      question: "Como funciona o atendimento via WhatsApp?",
-      answer: "Nossa equipe especializada está disponível para te atender via WhatsApp de segunda a sábado, das 9h às 18h. Você pode tirar dúvidas sobre produtos, tamanhos, cores e fazer seu pedido diretamente conosco. O atendimento é personalizado e humanizado, como você merece."
+      q: "Como funciona o atendimento via WhatsApp?",
+      a: "Nossa equipe especializada está disponível para te atender via WhatsApp de segunda a sábado, das 9h às 18h. Você pode tirar dúvidas sobre produtos, tamanhos, cores e fazer seu pedido diretamente conosco."
     },
     {
-      question: "Quais são as formas de pagamento?",
-      answer: "Aceitamos PIX e Cartão de Crédito. Para mais detalhes sobre as condições e opções de parcelamento, por favor, consulte nossa equipe de atendimento via WhatsApp."
+      q: "Quais são as formas de pagamento?",
+      a: "Aceitamos PIX e Cartão de Crédito. Para mais detalhes sobre as condições e opções de parcelamento, por favor, consulte nossa equipe de atendimento via WhatsApp."
     },
     {
-      question: "Qual o diferencial das peças Esten?",
-      answer: "Nossas peças são criadas para a mulher moderna que busca elegância, qualidade e propósito. Utilizamos tecidos selecionados, modelagem pensada para o corpo feminino e um design atemporal que permite expressar seu estilo com sofisticação."
+      q: "Qual o diferencial das peças Esten?",
+      a: "Nossas peças são criadas para a mulher moderna que busca elegância e qualidade. Utilizamos tecidos selecionados, modelagem pensada para o corpo feminino e um design atemporal."
     },
     {
-      question: "Como funciona a política de trocas e devoluções?",
-      answer: "Você tem até 7 dias para trocar ou devolver qualquer produto. Basta entrar em contato conosco via WhatsApp que orientamos todo o processo. As peças devem estar sem uso, com etiquetas e em perfeito estado."
+      q: "Como funciona a política de trocas e devoluções?",
+      a: "Você tem até 7 dias para trocar ou devolver qualquer produto. Basta entrar em contato conosco via WhatsApp. As peças devem estar sem uso, com etiquetas e em perfeito estado."
     },
     {
-      question: "Vocês entregam para todo o Brasil?",
-      answer: "Sim, enviamos para todo o Brasil! Para consultar prazos de entrega e valores de frete para a sua região, por favor, entre em contato conosco via WhatsApp."
+      q: "Vocês entregam para todo o Brasil?",
+      a: "Sim, enviamos para todo o Brasil! Para consultar prazos e valores de frete para a sua região, entre em contato conosco."
     },
   ];
 
   return (
-    <section className="py-20 bg-gradient-soft">
+    <section className="py-20 bg-esten-cream/50">
       <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto">
-          {/* Cabeçalho */}
+        <div className="max-w-3xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
-              Dúvidas Frequentes
+              DÚVIDAS FREQUENTES
             </h2>
             <p className="text-lg text-muted-foreground">
               Encontre respostas para as principais dúvidas sobre nossa marca e produtos.
             </p>
           </div>
 
-          {/* FAQ Accordion */}
-          <Accordion type="single" collapsible className="space-y-4">
+          <Accordion type="single" collapsible className="w-full space-y-3">
             {faqs.map((faq, index) => (
               <AccordionItem 
                 key={index} 
                 value={`item-${index}`}
-                className="bg-card border border-border rounded-lg shadow-soft px-6"
+                className="bg-card border border-border/50 rounded-lg"
               >
-                <AccordionTrigger className="text-left font-semibold text-primary hover:text-esten-terracotta transition-colors py-6">
-                  {faq.question}
+                <AccordionTrigger className="text-left font-medium text-foreground px-6 py-4 hover:no-underline">
+                  {faq.q}
                 </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground pb-6 leading-relaxed">
-                  {faq.answer}
+                <AccordionContent className="px-6 pb-4 text-muted-foreground">
+                  {faq.a}
                 </AccordionContent>
               </AccordionItem>
             ))}
           </Accordion>
-
-          {/* CTA de Contato */}
-          <div className="text-center mt-12 p-6 bg-card rounded-lg shadow-soft">
-            <p className="text-muted-foreground mb-4">
-              Não encontrou a resposta que procurava?
-            </p>
-            <p className="text-lg font-medium text-primary">
-              Entre em contato conosco via WhatsApp e tire todas suas dúvidas! 💬
-            </p>
+          
+          <div className="text-center mt-12 text-muted-foreground">
+            <p>Não encontrou a resposta que procurava?</p>
+            <a href="https://wa.me/5544997432870" target="_blank" rel="noopener noreferrer" className="text-primary font-medium hover:underline">
+              Entre em contato conosco via WhatsApp!
+            </a>
           </div>
         </div>
       </div>
