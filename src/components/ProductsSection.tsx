@@ -40,14 +40,14 @@ export function ProductsSection() {
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
             NOSSA COLEÇÃO
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg text-foreground/80 max-w-2xl mx-auto">
             Descubra peças que celebram sua identidade com elegância e sofisticação.
           </p>
         </div>
 
         {/* Seção Camisetas */}
         <div id="camisetas" className="mb-20">
-          <h3 className="text-3xl font-semibold text-foreground text-center mb-10">CAMISETAS</h3>
+          <h3 className="text-3xl font-semibold text-primary text-center mb-10 tracking-widest">CAMISETAS</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
             {camisetas.map((product) => (
               <ProductCard key={product.id} product={product} />
@@ -57,7 +57,7 @@ export function ProductsSection() {
 
         {/* Seção Conjuntos */}
         <div id="conjuntos">
-          <h3 className="text-3xl font-semibold text-foreground text-center mb-10">CONJUNTOS</h3>
+          <h3 className="text-3xl font-semibold text-primary text-center mb-10 tracking-widest">CONJUNTOS</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
             {conjuntos.map((product) => (
               <ProductCard key={product.id} product={product} />
@@ -68,3 +68,4 @@ export function ProductsSection() {
     </section>
   );
 }
+

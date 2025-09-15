@@ -4,46 +4,39 @@
 
 @layer base {
   :root {
-    --background: 30 36% 94%; /* #F5F1EC */
-    --foreground: 77 15% 25%; /* #454A33 */
+    --background: 30 36% 94%; /* #f5f1ec */
+    --foreground: 17 21% 19%; /* #3a2d27 */
 
-    --card: 30 36% 94%;
-    --card-foreground: 77 15% 25%;
-
+    --card: 30 36% 96%; /* #F7F3EF */
+    --card-foreground: 17 21% 19%;
+    
     --popover: 30 36% 94%;
-    --popover-foreground: 77 15% 25%;
+    --popover-foreground: 17 21% 19%;
 
-    --primary: 77 15% 37%; /* #6A704C */
-    --primary-foreground: 30 36% 94%; /* #F5F1EC */
+    --primary: 0 58% 22%; /* #5B1818 */
+    --primary-foreground: 30 36% 94%; /* #f5f1ec */
 
-    --secondary: 19 39% 64%; /* #BC846C */
+    --secondary: 77 15% 37%; /* #6A704C */
     --secondary-foreground: 30 36% 94%;
 
-    --muted: 77 15% 47%; /* Lighter olive for muted text */
-    --muted-foreground: 77 15% 30%;
+    --muted: 30 36% 90%;
+    --muted-foreground: 17 21% 35%;
 
-    --accent: 30 36% 90%;
-    --accent-foreground: 77 15% 20%;
+    --accent: 19 39% 64%; /* #BC846C */
+    --accent-foreground: 30 36% 94%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 60 9.1% 97.8%;
 
-    --border: 77 15% 85%;
-    --input: 77 15% 85%;
-    --ring: 77 15% 37%;
+    --border: 30 36% 88%;
+    --input: 30 36% 88%;
+    --ring: 0 58% 22%;
 
     --radius: 0.5rem;
-
-    /* Esten Brand Colors */
-    --esten-cream: 30 36% 94%;
-    --esten-bordeaux: 348 51% 36%; /* #8C2D3E */
-    --esten-terracotta: 19 39% 64%; /* #BC846C */
-    --esten-yellow: 45 85% 65%; /* #EDC951 - Kept from original */
-    --esten-olive: 77 15% 37%; /* #6A704C */
   }
-
+  
   .dark {
-    /* Define dark mode colors if needed */
+    /* You can define dark mode colors here if needed in the future */
   }
 }
 
@@ -59,3 +52,4 @@
     @apply font-playfair;
   }
 }
+
