@@ -34,10 +34,10 @@ export function FaqSection() {
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
+            <h2 className="text-4xl md:text-5xl font-light text-primary mb-4">
               DÚVIDAS FREQUENTES
             </h2>
-            <p className="text-lg text-muted-foreground">
+            <p className="text-lg text-muted-foreground font-light">
               Encontre respostas para as principais dúvidas sobre nossa marca e produtos.
             </p>
           </div>
@@ -49,10 +49,10 @@ export function FaqSection() {
                 value={`item-${index}`}
                 className="bg-card border border-border/50 rounded-lg"
               >
-                <AccordionTrigger className="text-left font-medium text-foreground px-6 py-4 hover:no-underline">
+                <AccordionTrigger className="text-left font-light text-foreground px-6 py-4 hover:no-underline">
                   {faq.q}
                 </AccordionTrigger>
-                <AccordionContent className="px-6 pb-4 text-muted-foreground">
+                <AccordionContent className="px-6 pb-4 text-muted-foreground font-light">
                   {faq.a}
                 </AccordionContent>
               </AccordionItem>
@@ -60,8 +60,8 @@ export function FaqSection() {
           </Accordion>
           
           <div className="text-center mt-12 text-muted-foreground">
-            <p>Não encontrou a resposta que procurava?</p>
-            <a href="https://wa.me/5544997432870" target="_blank" rel="noopener noreferrer" className="text-primary font-medium hover:underline">
+            <p className="font-light">Não encontrou a resposta que procurava?</p>
+            <a href="https://wa.me/5544997432870" target="_blank" rel="noopener noreferrer" className="text-primary font-light hover:underline">
               Entre em contato conosco via WhatsApp!
             </a>
           </div>

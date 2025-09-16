@@ -18,7 +18,7 @@ const SealSVG = () => (
         <text
           fontFamily="Absans, sans-serif" /* Alterado para Absans */
           fontSize="13"
-          fontWeight="600"
+          fontWeight="400"
           letterSpacing="2.5"
         >
           <textPath href="#circlePath" startOffset="50%" textAnchor="middle">
@@ -44,12 +44,12 @@ export function AboutSection() {
           {/* Conteúdo de Texto */}
           <div className="space-y-6">
             <div className="space-y-3">
-              <h2 className="text-4xl md:text-5xl font-bold text-primary">
+              <h2 className="text-4xl md:text-5xl font-light text-primary">
                 BELEZA COM PROPÓSITO
               </h2>
             </div>
             
-            <div className="space-y-4 text-base text-foreground leading-relaxed">
+            <div className="space-y-4 text-base text-foreground leading-relaxed font-light">
               <p>
                 Na Esten, acreditamos que a verdadeira elegância transcende o que se veste, emanando da essência de cada mulher. Criamos moda modesta, sofisticada e atemporal, desenhada para inspirar confiança e autenticidade.
               </p>
@@ -60,20 +60,20 @@ export function AboutSection() {
             
             <div className="grid grid-cols-2 gap-6 pt-4">
               <div>
-                <h4 className="font-semibold text-primary">Elegante</h4>
-                <p className="text-sm text-foreground/80">Sofisticação em cada detalhe.</p>
+                <h4 className="font-light text-primary">Elegante</h4>
+                <p className="text-sm text-foreground/80 font-light">Sofisticação em cada detalhe.</p>
               </div>
               <div>
-                <h4 className="font-semibold text-primary">Atemporal</h4>
-                <p className="text-sm text-foreground/80">Estilo que transcende tendências.</p>
+                <h4 className="font-light text-primary">Atemporal</h4>
+                <p className="text-sm text-foreground/80 font-light">Estilo que transcende tendências.</p>
               </div>
               <div>
-                <h4 className="font-semibold text-primary">Autêntica</h4>
-                <p className="text-sm text-foreground/80">Verdadeira à sua essência.</p>
+                <h4 className="font-light text-primary">Autêntica</h4>
+                <p className="text-sm text-foreground/80 font-light">Verdadeira à sua essência.</p>
               </div>
               <div>
-                <h4 className="font-semibold text-primary">Com Propósito</h4>
-                <p className="text-sm text-foreground/80">Peças que refletem seus valores.</p>
+                <h4 className="font-light text-primary">Com Propósito</h4>
+                <p className="text-sm text-foreground/80 font-light">Peças que refletem seus valores.</p>
               </div>
             </div>
           </div>
