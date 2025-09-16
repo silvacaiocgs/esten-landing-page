@@ -16,7 +16,7 @@ const SealSVG = () => (
       <circle cx="72" cy="72" r="72" fill="#BC846C" />
       <g className="text-white fill-current">
         <text
-          fontFamily="Inter, sans-serif"
+          fontFamily="Absans, sans-serif" /* Alterado para Absans */
           fontSize="13"
           fontWeight="600"
           letterSpacing="2.5"
@@ -44,7 +44,7 @@ export function AboutSection() {
           {/* Conteúdo de Texto */}
           <div className="space-y-6">
             <div className="space-y-3">
-              <h2 className="text-4xl md:text-5xl font-bold text-primary">
+              <h2 className="text-4xl md:text-5xl font-bold text-primary font-sans"> {/* Adicionado font-sans */}
                 BELEZA COM PROPÓSITO
               </h2>
             </div>
@@ -82,4 +82,3 @@ export function AboutSection() {
     </section>
   );
 }
-
