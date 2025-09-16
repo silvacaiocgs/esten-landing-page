@@ -7,7 +7,6 @@ import {
 } from "@/components/ui/carousel";
 import { Button } from "@/components/ui/button";
 import WhatsappIcon from '@/assets/whatsapp-icon.png';
-import { MessageCircle } from "lucide-react";
 
 interface Product {
   id: number;
@@ -26,12 +25,12 @@ export function ProductCard({ product }: ProductCardProps) {
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
 
   return (
-    <div className="bg-card rounded-lg overflow-hidden border flex flex-col group">
+    <div className="bg-transparent rounded-lg overflow-hidden flex flex-col group">
       <Carousel className="relative" opts={{ loop: true }}>
         <CarouselContent>
           {product.images.map((image, index) => (
             <CarouselItem key={index}>
-              <div className="aspect-[3/4] bg-muted">
+              <div className="aspect-[3/4] bg-muted rounded-lg overflow-hidden">
                 <img 
                   src={image} 
                   alt={`${product.name} - foto ${index + 1}`} 
@@ -45,10 +44,10 @@ export function ProductCard({ product }: ProductCardProps) {
         <CarouselNext className="absolute right-3 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity" />
       </Carousel>
 
-      <div className="p-4 text-center flex flex-col flex-grow">
-        <h3 className="text-lg font-semibold text-primary">{product.name}</h3>
-        <p className="text-sm text-muted-foreground mb-4">{product.description}</p>
-        <Button asChild className="mt-auto w-full bg-secondary hover:bg-primary text-secondary-foreground hover:text-primary-foreground transition-colors">
+      <div className="pt-4 text-center flex flex-col flex-grow">
+        <h3 className="text-lg font-light text-primary">{product.name}</h3>
+        <p className="text-sm text-foreground/80 font-light mb-4">{product.description}</p>
+        <Button asChild className="mt-auto w-full bg-secondary hover:bg-primary text-secondary-foreground hover:text-primary-foreground transition-colors rounded-lg">
           <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
             <img src={WhatsappIcon} alt="WhatsApp Icon" className="mr-2 h-4 w-4" />
             Comprar por WhatsApp
@@ -58,3 +57,4 @@ export function ProductCard({ product }: ProductCardProps) {
     </div>
   );
 }
+

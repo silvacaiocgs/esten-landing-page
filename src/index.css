@@ -20,26 +20,26 @@
 
 @layer base {
   :root {
-    --background: 30 36% 94%; /* #f5f1ec */
+    --background: 30 77% 95%; /* #FCF1E8 */
     --foreground: 17 21% 19%; /* #3a2d27 */
 
     --card: 30 36% 96%; /* #F7F3EF */
     --card-foreground: 17 21% 19%;
     
-    --popover: 30 36% 94%;
+    --popover: 30 77% 95%;
     --popover-foreground: 17 21% 19%;
 
     --primary: 0 58% 22%; /* #5B1818 */
     --primary-foreground: 30 36% 94%; /* #f5f1ec */
 
-    --secondary: 77 15% 37%; /* #6A704C */
+    --secondary: 78 30% 34%; /* #69703C */
     --secondary-foreground: 30 36% 94%;
 
     --muted: 30 36% 90%;
     --muted-foreground: 17 21% 35%;
 
     --accent: 19 39% 64%; /* #BC846C */
-    --accent-foreground: 30 36% 94%;
+    --accent-foreground: 30 77% 95%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 60 9.1% 97.8%;
@@ -49,6 +49,9 @@
     --ring: 0 58% 22%;
 
     --radius: 0.5rem;
+
+    /* Cor da marca adicionada */
+    --esten-cream: 30 77% 95%; /* #FCF1E8 */
   }
   
   .dark {
@@ -66,3 +69,4 @@
   }
   /* A regra global para h1-h6 foi removida para permitir a aplicação da fonte Absans como padrão. */
 }
+
