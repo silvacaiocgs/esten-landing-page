@@ -12,16 +12,16 @@ export function FinalCtaSection() {
   ];
 
   return (
-    <section className="py-20 bg-background font-absans">
+    <section className="py-20 bg-primary text-primary-foreground font-absans">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-light text-primary mb-4">
+          <h2 className="text-4xl md:text-5xl font-light text-primary-foreground mb-4">
             PRONTA PARA BRILHAR COM ESTEN?
           </h2>
-          <p className="text-lg text-foreground/80 mb-8 max-w-2xl mx-auto font-light">
+          <p className="text-lg text-primary-foreground/80 mb-8 max-w-2xl mx-auto font-light">
             Sua próxima peça favorita te espera. Nossa equipe está pronta para te atender com toda atenção e carinho via WhatsApp.
           </p>
-          <Button asChild size="lg">
+          <Button asChild size="lg" className="bg-esten-terracotta text-primary-foreground hover:bg-esten-terracotta/90">
             <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
               Fale conosco no WhatsApp
             </a>
@@ -31,20 +31,20 @@ export function FinalCtaSection() {
         <div className="max-w-5xl mx-auto grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-20">
           {benefits.map((benefit) => (
             <div key={benefit.title} className="text-center space-y-3">
-              <div className="w-16 h-16 mx-auto bg-primary/10 text-primary rounded-full flex items-center justify-center">
+              <div className="w-16 h-16 mx-auto bg-esten-terracotta text-primary-foreground rounded-full flex items-center justify-center">
                 {benefit.icon}
               </div>
-              <h4 className="font-light text-foreground pt-2">{benefit.title}</h4>
-              <p className="text-sm text-foreground/70 font-light">{benefit.description}</p>
+              <h4 className="font-light text-primary-foreground pt-2">{benefit.title}</h4>
+              <p className="text-sm text-primary-foreground/80 font-light">{benefit.description}</p>
             </div>
           ))}
         </div>
 
          <div className="text-center mt-20">
-          <p className="text-base italic text-foreground/70 font-light">
+          <p className="text-base italic text-primary-foreground/70 font-light">
             "Acreditamos em uma moda que celebra a sua essência e empodera suas escolhas."
           </p>
-          <p className="text-sm mt-2 font-light text-primary">
+          <p className="text-sm mt-2 font-light text-esten-terracotta">
             - Hosana Pinea
           </p>
         </div>

@@ -1,4 +1,4 @@
-import AboutImage from "../assets/produto6-foto2-camisetaoffwhitecoragem.png";
+import AboutImage from "@/assets/produto6-foto2-camisetaoffwhitecoragem.png";
 
 const SealSVG = () => (
     <svg
@@ -13,10 +13,10 @@ const SealSVG = () => (
           d="M 72, 72 m -52, 0 a 52,52 0 1,1 104,0 a 52,52 0 1,1 -104,0"
         />
       </defs>
-      <circle cx="72" cy="72" r="72" fill="#BC846C" />
+      <circle cx="72" cy="72" r="72" fill="#A3462D" />
       <g className="text-white fill-current">
         <text
-          fontFamily="Absans, sans-serif" /* Alterado para Absans */
+          fontFamily="Absans, sans-serif"
           fontSize="13"
           fontWeight="400"
           letterSpacing="2.5"
@@ -82,3 +82,4 @@ export function AboutSection() {
     </section>
   );
 }
+

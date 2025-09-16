@@ -52,6 +52,7 @@
 
     /* Cor da marca adicionada */
     --esten-cream: 30 77% 95%; /* #FCF1E8 */
+    --esten-terracotta: 14 59% 41%; /* #A3462D */
   }
   
   .dark {
@@ -69,4 +70,3 @@
   }
   /* A regra global para h1-h6 foi removida para permitir a aplicação da fonte Absans como padrão. */
 }
-
