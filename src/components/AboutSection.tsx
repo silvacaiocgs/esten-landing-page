@@ -1,34 +1,5 @@
 import AboutImage from "@/assets/produto6-foto2-camisetaoffwhitecoragem.png";
-
-const SealSVG = () => (
-    <svg
-      width="144"
-      height="144"
-      viewBox="0 0 144 144"
-      className="absolute -bottom-8 -right-8 w-36 h-36 transform rotate-[-15deg]"
-    >
-      <defs>
-        <path
-          id="circlePath"
-          d="M 72, 72 m -52, 0 a 52,52 0 1,1 104,0 a 52,52 0 1,1 -104,0"
-        />
-      </defs>
-      <circle cx="72" cy="72" r="72" fill="#A3462D" />
-      <g className="text-white fill-current">
-        <text
-          fontFamily="Absans, sans-serif"
-          fontSize="13"
-          fontWeight="400"
-          letterSpacing="2.5"
-        >
-          <textPath href="#circlePath" startOffset="50%" textAnchor="middle">
-            O MELHOR VEM DE DENTRO
-          </textPath>
-        </text>
-        <path d="M72 58.65L77.7 70.35L90 72L80.85 80.85L82.8 93L72 87.15L61.2 93L63.15 80.85L54 72L66.3 70.35L72 58.65Z" />
-      </g>
-    </svg>
-  );
+import SealImage from "@/assets/layer_1.png"; // Importando a nova imagem do selo
 
 export function AboutSection() {
   return (
@@ -37,8 +8,19 @@ export function AboutSection() {
         <div className="grid md:grid-cols-2 gap-12 md:gap-20 items-center max-w-6xl mx-auto">
           {/* Imagem com Selo */}
           <div className="relative">
-            <img src={AboutImage} alt="Modelo Esten vestindo camiseta Coragem" className="rounded-lg shadow-lg w-full" />
-            <SealSVG />
+            <img 
+              src={AboutImage} 
+              alt="Modelo Esten vestindo camiseta Coragem" 
+              className="rounded-lg shadow-lg w-full" 
+            />
+            {/* O SVG foi substituído por uma div com a imagem para replicar o design solicitado */}
+            <div className="absolute -bottom-6 -right-6 w-28 h-28 transform rotate-[-15deg] bg-[#A3462D] rounded-full flex items-center justify-center p-1.5 shadow-lg">
+              <img 
+                src={SealImage} 
+                alt="Selo - O melhor vem de dentro" 
+                className="w-full h-auto" 
+              />
+            </div>
           </div>
 
           {/* Conteúdo de Texto */}

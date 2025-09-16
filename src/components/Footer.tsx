@@ -18,7 +18,7 @@ export function Footer() {
             </p>
             <div className="flex space-x-4">
               <a 
-                href="https://instagram.com/use.esten" 
+                href="https://instagram.com/useesten" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-primary-foreground/10 rounded-full flex items-center justify-center hover:bg-primary-foreground/20 transition-colors"
@@ -71,15 +71,10 @@ export function Footer() {
 
         {/* Bottom Section */}
         <div className="border-t border-primary-foreground/20 pt-8 space-y-4">
-          <div className="text-center">
-            <p className="text-primary-foreground/60 italic mb-2">
-              "Acreditamos em uma moda que celebra a sua essência e empodera suas escolhas."
-            </p>
-          </div>
           
           <div className="flex flex-col md:flex-row justify-between items-center text-sm text-primary-foreground/60">
             <p>© 2024 Esten - Todos os direitos reservados.</p>
-            <p>Desenvolvido por Kadima Group®</p>
+            <p>Desenvolvido por Kadima Group® e Maka.</p>
           </div>
         </div>
       </div>
