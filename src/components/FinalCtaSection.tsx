@@ -12,7 +12,7 @@ export function FinalCtaSection() {
   ];
 
   return (
-    <section className="py-20 bg-background">
+    <section className="py-20 bg-background font-absans">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
@@ -52,4 +52,3 @@ export function FinalCtaSection() {
     </section>
   );
 }
-

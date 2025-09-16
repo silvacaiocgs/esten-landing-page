@@ -23,12 +23,12 @@ export function HeroSection() {
         <div className="max-w-xl text-left space-y-6">
           
           {/* Título Principal */}
-          <h1 className="text-6xl md:text-8xl font-light text-white tracking-tight leading-tight font-playfair">
+          <h1 className="text-5xl md:text-[68px] font-light text-white tracking-wide leading-[1.1] font-absans">
             O MELHOR VEM DE DENTRO.
           </h1>
 
           {/* Subtítulo */}
-          <p className="text-base md:text-lg text-white max-w-xl leading-relaxed">
+          <p className="text-base md:text-lg text-white max-w-xl leading-relaxed font-sans font-light">
             Criamos moda sofisticada e atemporal, desenhada para inspirar 
             confiança e autenticidade em todas as ocasiões.
           </p>
@@ -39,7 +39,7 @@ export function HeroSection() {
               size="lg"
               variant="outline"
               onClick={scrollToCollections}
-              className="border-white text-white bg-transparent hover:bg-white hover:text-black transition-colors duration-300"
+              className="border-2 border-white text-white bg-transparent hover:bg-white hover:text-black transition-colors duration-300"
             >
               Conheça a coleção
             </Button>
@@ -49,3 +49,4 @@ export function HeroSection() {
     </section>
   );
 }
+

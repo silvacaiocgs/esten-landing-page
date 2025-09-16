@@ -16,6 +16,7 @@ export default {
       fontFamily: {
         sans: ["Manrope", "sans-serif"],
         playfair: ["Playfair Display", "serif"],
+        absans: ["Absans", "sans-serif"], // Adicionando a fonte Absans
       },
       colors: {
         border: "hsl(var(--border))",

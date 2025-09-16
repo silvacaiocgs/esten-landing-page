@@ -32,7 +32,7 @@ const SealSVG = () => (
 
 export function AboutSection() {
   return (
-    <section id="sobre" className="py-20 md:py-32 bg-background">
+    <section id="sobre" className="py-20 md:py-32 bg-background font-absans">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-12 md:gap-20 items-center max-w-6xl mx-auto">
           {/* Imagem com Selo */}
@@ -44,7 +44,7 @@ export function AboutSection() {
           {/* Conteúdo de Texto */}
           <div className="space-y-6">
             <div className="space-y-3">
-              <h2 className="text-4xl md:text-5xl font-bold text-primary font-sans"> {/* Adicionado font-sans */}
+              <h2 className="text-4xl md:text-5xl font-bold text-primary">
                 BELEZA COM PROPÓSITO
               </h2>
             </div>

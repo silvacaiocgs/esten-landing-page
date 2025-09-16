@@ -46,7 +46,7 @@ export function ProductCard({ product }: ProductCardProps) {
       </Carousel>
 
       <div className="p-4 text-center flex flex-col flex-grow">
-        <h3 className="font-playfair text-lg font-semibold text-primary">{product.name}</h3>
+        <h3 className="text-lg font-semibold text-primary">{product.name}</h3>
         <p className="text-sm text-muted-foreground mb-4">{product.description}</p>
         <Button asChild className="mt-auto w-full bg-secondary hover:bg-primary text-secondary-foreground hover:text-primary-foreground transition-colors">
           <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
@@ -58,4 +58,3 @@ export function ProductCard({ product }: ProductCardProps) {
     </div>
   );
 }
-
