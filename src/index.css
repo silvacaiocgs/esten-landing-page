@@ -1,3 +1,19 @@
+/* Adicione esta seção no topo do seu arquivo index.css */
+@layer base {
+  @font-face {
+    font-family: 'Absans';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    /* IMPORTANTE:
+      1. Crie uma pasta chamada 'fonts' dentro da pasta 'public'.
+      2. Coloque seu arquivo de fonte 'Absans-Regular.woff2' (ou outro formato) dentro de 'public/fonts/'.
+      3. Se o nome do arquivo ou formato for diferente, ajuste o caminho abaixo.
+    */
+    src: url('/fonts/Absans-Regular.woff2') format('woff2');
+  }
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -52,4 +68,3 @@
     @apply font-playfair;
   }
 }
-

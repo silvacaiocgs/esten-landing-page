@@ -5,7 +5,9 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import { Button } from "./ui/button";
+import { Button } from "@/components/ui/button";
+import WhatsappIcon from '@/assets/whatsapp-icon.png';
+import { MessageCircle } from "lucide-react";
 
 interface Product {
   id: number;
@@ -46,8 +48,9 @@ export function ProductCard({ product }: ProductCardProps) {
       <div className="p-4 text-center flex flex-col flex-grow">
         <h3 className="font-playfair text-lg font-semibold text-primary">{product.name}</h3>
         <p className="text-sm text-muted-foreground mb-4">{product.description}</p>
-        <Button asChild className="mt-auto w-full">
+        <Button asChild className="mt-auto w-full bg-secondary hover:bg-primary text-secondary-foreground hover:text-primary-foreground transition-colors">
           <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
+            <img src={WhatsappIcon} alt="WhatsApp Icon" className="mr-2 h-4 w-4" />
             Comprar por WhatsApp
           </a>
         </Button>
